@@ -25,6 +25,10 @@ obj/
 .vscode/
 # Firebase
 **/firebase-admin-sdk.json
+**/ReactNative.csproj
+
+ReactNative/ReactNative.csproj
+*.csproj
 
 # .NET Core
 project.lock.json
