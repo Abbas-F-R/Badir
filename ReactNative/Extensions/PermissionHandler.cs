@@ -7,7 +7,7 @@ public class PermissionHandler : AuthorizationHandler<IAuthorizationRequirement>
     protected override Task HandleRequirementAsync(AuthorizationHandlerContext context,
         IAuthorizationRequirement requirement)
     {
-        if (context.User.IsInRole("Admin") || context.User.IsInRole("Manager") || context.User.IsInRole("Contractor"))
+        if (context.User.IsInRole("Admin") )
         {
             context.Succeed(requirement);
             return Task.CompletedTask;

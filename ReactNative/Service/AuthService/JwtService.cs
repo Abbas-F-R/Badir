@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ReactNative.Service.AuthService;
 
-public class JwtService(IRepositoryWrapper wrapper, ITopicService service, TokenService.TokenService tokenService)
+public class JwtService(IRepositoryWrapper wrapper, ITopicService service, TokenService.TokenService tokenService, IMapper mapper)
     : IJwtService
 {
     public async Task<(Auth?, string? error)> Register(UserForm request)
@@ -33,8 +33,7 @@ public class JwtService(IRepositoryWrapper wrapper, ITopicService service, Token
 
         if (!BCrypt.Net.BCrypt.Verify(request.Password, userSaved.PasswordHash))
             return (null, "Wrong password");
-        int tokenExpTime = (userSaved.Role == Role.Engineer || userSaved.Role == Role.Manager ||
-                            userSaved.Role == Role.Contractor || userSaved.Role == Role.ContractorEngineer)
+        int tokenExpTime = ( userSaved.Role == Role.Manager )
             ? 12
             : 2;
         var token = tokenService.CreateToken(userSaved, tokenExpTime);
@@ -143,7 +142,7 @@ public class JwtService(IRepositoryWrapper wrapper, ITopicService service, Token
     {
         if (!Enum.TryParse<Role>(role, out var parsedRole) ||
             parsedRole != Role.Admin &&
-            (request.Role == Role.Manager || request.Role == Role.Contractor))
+            (request.Role == Role.Manager ))
         {
             return false;
         }
@@ -154,5 +153,34 @@ public class JwtService(IRepositoryWrapper wrapper, ITopicService service, Token
         }
 
         return true;
+    }
+    
+    public async Task<(UserDto?, string? error)> AddPermission(UserPermissionsUpdate update)
+    {
+        var user = await wrapper.User.Get(
+            u => u.Id == update.Id,
+            x => x.Include(p => p.Permission!)
+        );
+
+        if (user == null)
+            return (null, "");
+
+        var (permissions, totalCount) = await wrapper.Permission.GetAll(p => update.PermissionIds.Contains(p.Id));
+        if (permissions == null || totalCount <= 0)
+        {
+            return (null, "" );
+        }
+
+        foreach (var permission in permissions)
+        {
+            var existing = user.Permission!.FirstOrDefault(p => p.Id == permission.Id);
+            if (existing != null)
+                user.Permission!.Remove(existing);
+            else
+                user.Permission!.Add(permission);
+        }
+
+        var result = await wrapper.User.Update(user);
+        return (mapper.Map<UserDto>(result), null);
     }
 }

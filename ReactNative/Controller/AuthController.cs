@@ -15,10 +15,9 @@ public class AuthController(IJwtService jwtService)  : BaseController
     
     [HttpPost("Login")]
     public async Task<ActionResult<Auth>> Login(LoginRequest request) => Ok(await jwtService.Login(request));
-    // [HttpPost("Register/Admin")]
-    // [Authorize(Roles = "Admin, Manager, Contractor ")]
-    // public async Task<ActionResult<Auth>> RegisterManager(UserRegisterForm request) => Ok(await jwtService.Register(request, Role));
-
+    [HttpPut("Update/Permission")]
+    public async Task<ActionResult<UserDto>> UpdatePermission([FromBody] UserPermissionsUpdate update) => 
+        Ok(await jwtService.AddPermission(update));
     [HttpPost("google-login")]
     public async Task<IActionResult> GoogleLogin([FromBody] GoogleTokenRequest request)
     {

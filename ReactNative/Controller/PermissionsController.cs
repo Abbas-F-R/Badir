@@ -8,7 +8,7 @@ namespace ReactNative.Controller;
 public class PermissionsController(IPermissionService service) : BaseController
 {
 
-    [HttpGet("GetAll/System")]
+    [HttpGet("System")]
     public async Task<ActionResult<Response<PermissionResponse>>> GetAllSystem() =>
         Ok(await service.GatAllSystem());
 }

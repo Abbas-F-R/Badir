@@ -29,13 +29,13 @@ public class UserController(IUserService service) : BaseController
 
 
     
-    [HttpPut("Update/Permission")]
-    public async Task<ActionResult> UpdatePermission([FromBody] UserPermissionsUpdate update) => 
-        Ok(await service.AddPermission(update));
-    [HttpPut("Remove/Permission")]
-    public async Task<ActionResult<UserDto>> RemovePermission([FromBody] UserPermissionsUpdate update) =>
-        Ok(await service.RemovePermission(update));
-    
-    
+    // [HttpPut("Update/Permission")]
+    // public async Task<ActionResult> UpdatePermission([FromBody] UserPermissionsUpdate update) => 
+    //     Ok(await service.AddPermission(update));
+    // [HttpPut("Remove/Permission")]
+    // public async Task<ActionResult<UserDto>> RemovePermission([FromBody] UserPermissionsUpdate update) =>
+    //     Ok(await service.RemovePermission(update));
+    //
+    //
 
 } 
