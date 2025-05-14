@@ -1,0 +1,12 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ReactNative.Model;
+
+[Table("likes")]
+
+public class Like: LikeBase
+{
+    public int? PostId { get; set; }
+    public Post? Posts { get; set; }
+    
+}
