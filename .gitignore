@@ -1,0 +1,90 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider IDE
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+# Firebase
+**/firebase-admin-sdk.json
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Logs
+*.log
+
+# Tye
+.tye/
+
+# wwwroot generated content (optional - only if generated)
+wwwroot/
+wwwroot/dist/
+wwwroot/node_modules/
+
+# npm packages (if using frontend with node)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Environment files (keep local secrets safe!)
+.env
+.env.*
+
+# Publish directory
+publish/
+out/
+
+# Coverage results
+coverage/
+*.coverage
+*.coveragexml
+
+# Others
+*.db
+*.sqlite
+*.pdb
+*.mdb
+*.bak
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NuGet
+*.nupkg
+.nuget/
+packages/
+*.snupkg
+
+# Auto-generated files
+Generated_Code/
+
+# Mac/Linux file system stuff
+.DS_Store
+Thumbs.db
