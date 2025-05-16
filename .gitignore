@@ -26,9 +26,6 @@ obj/
 # Firebase
 **/firebase-admin-sdk.json
 
-
-*.csproj
-
 # .NET Core
 project.lock.json
 project.fragment.lock.json
