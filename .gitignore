@@ -27,7 +27,6 @@ obj/
 **/firebase-admin-sdk.json
 
 
-ReactNative/ReactNative.csproj
 *.csproj
 
 # .NET Core
