@@ -1,4 +1,4 @@
-namespace ReactNative.Helper;
+namespace Badir.Helper;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
 

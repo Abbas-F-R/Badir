@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
-using ReactNative.Service.TopicService;
+using Badir.Service.TopicService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ReactNative.Controller;
+namespace Badir.Controller;
 
 [ApiController]
 [Route("api/[Controller]")]

@@ -1,4 +1,4 @@
-namespace ReactNative.Service.CommentLikeService;
+namespace Badir.Service.CommentLikeService;
 
 public interface ICommentLikeService
 {

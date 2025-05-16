@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.Hashtag;
+namespace Badir.Dto.Hashtag;
 
 public class HashtagDto
 {

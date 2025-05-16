@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ReactNative.Data;
+using Badir.Data;
 
 #nullable disable
 
-namespace ReactNative.Migrations
+namespace Badir.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
     [Migration("20250514005206_First")]

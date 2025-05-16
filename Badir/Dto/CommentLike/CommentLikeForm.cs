@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.CommentLike;
+namespace Badir.Dto.CommentLike;
 
 public class CommentLikeForm
 {

@@ -1,7 +1,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace ReactNative.Helper;
+namespace Badir.Helper;
 
 public static class OTPGenerator
 {

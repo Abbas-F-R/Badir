@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ReactNative.Service.ReplayCommentService;
+namespace Badir.Service.ReplayCommentService;
 
 public class ReplayCommentService(IRepositoryWrapper wrapper, IMapper mapper) : IReplayCommentService
 {

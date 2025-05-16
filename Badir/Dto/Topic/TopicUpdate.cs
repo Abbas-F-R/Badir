@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace ReactNative.Dto.Topic;
+namespace Badir.Dto.Topic;
 
 public class TopicUpdate
 {

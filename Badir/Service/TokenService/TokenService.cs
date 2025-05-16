@@ -3,7 +3,7 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 
-namespace ReactNative.Service.TokenService;
+namespace Badir.Service.TokenService;
 
 
     public class TokenService

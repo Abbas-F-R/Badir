@@ -1,4 +1,4 @@
-namespace ReactNative.Service.RateService;
+namespace Badir.Service.RateService;
 
 public interface IRateService
 {

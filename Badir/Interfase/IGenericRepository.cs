@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore.Query;
 
-namespace ReactNative.Interface;
+namespace Badir.Interface;
 
 public interface IGenericRepository <T ,  TId>
 {

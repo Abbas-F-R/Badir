@@ -2,9 +2,9 @@
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using ReactNative.Service;
+using Badir.Service;
 
-namespace ReactNative.Controller;
+namespace Badir.Controller;
 
 [ApiController]
 [Route("api/[Controller]")]

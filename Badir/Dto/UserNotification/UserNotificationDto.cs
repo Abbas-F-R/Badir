@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.UserNotification;
+namespace Badir.Dto.UserNotification;
 
 public class UserNotificationDto
 {

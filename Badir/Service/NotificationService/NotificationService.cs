@@ -1,7 +1,7 @@
 using FirebaseAdmin.Messaging;
 using Microsoft.EntityFrameworkCore;
 
-namespace ReactNative.Service.NotificationService;
+namespace Badir.Service.NotificationService;
 
 public class NotificationService(
     IRepositoryWrapper wrapper,

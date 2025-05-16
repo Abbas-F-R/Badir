@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.ReplayCommentLike;
+namespace Badir.Dto.ReplayCommentLike;
 
 public class ReplayCommentLikeForm
 {

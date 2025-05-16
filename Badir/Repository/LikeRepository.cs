@@ -1,4 +1,4 @@
-namespace ReactNative.Repository;
+namespace Badir.Repository;
 
 public class LikeRepository : GenericRepository<Like, int> , ILikeRepository
 {

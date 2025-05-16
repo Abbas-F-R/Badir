@@ -3,7 +3,7 @@ using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 
-namespace ReactNative.Repository;
+namespace Badir.Repository;
 
 public class GenericRepository<T, TId> : IGenericRepository<T, TId> where T : BaseEntity
 {

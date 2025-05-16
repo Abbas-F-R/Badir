@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.File;
+namespace Badir.Dto.File;
 
 public class FileForm
 {

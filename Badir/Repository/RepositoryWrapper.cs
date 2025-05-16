@@ -1,5 +1,5 @@
 
-namespace ReactNative.Repository;
+namespace Badir.Repository;
 
 public class RepositoryWrapper(DatabaseContext context, IMapper mapper) : IRepositoryWrapper
 {

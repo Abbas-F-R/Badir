@@ -2,7 +2,7 @@ using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace ReactNative.Service.AuthService;
+namespace Badir.Service.AuthService;
 
 public class JwtService(IRepositoryWrapper wrapper, ITopicService service, TokenService.TokenService tokenService, IMapper mapper)
     : IJwtService
@@ -97,7 +97,7 @@ public class JwtService(IRepositoryWrapper wrapper, ITopicService service, Token
     }
 
 
-    private User CreateUser(UserRegisterForm request, Role role)
+    private User CreateUser(RegisterRequest request, Role role)
     {
         return new User
         {
@@ -138,7 +138,7 @@ public class JwtService(IRepositoryWrapper wrapper, ITopicService service, Token
     }
 
 
-    private bool IsValidRole(string role, UserRegisterForm request)
+    private bool IsValidRole(string role, RegisterRequest request)
     {
         if (!Enum.TryParse<Role>(role, out var parsedRole) ||
             parsedRole != Role.Admin &&

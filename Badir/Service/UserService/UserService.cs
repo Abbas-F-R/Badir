@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ReactNative.Service.UserService;
+namespace Badir.Service.UserService;
 
 public class UserService(
     IRepositoryWrapper wrapper,

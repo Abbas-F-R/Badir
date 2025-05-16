@@ -1,6 +1,6 @@
-using ReactNative.Dto.ReplayComment;
+using Badir.Dto.ReplayComment;
 
-namespace ReactNative.Service.ReplayCommentService;
+namespace Badir.Service.ReplayCommentService;
 
 public interface IReplayCommentService
 {

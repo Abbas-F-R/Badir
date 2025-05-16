@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.CampaignActivities;
+namespace Badir.Dto.CampaignActivities;
 
 public class CampaignActivitiesForm
 {

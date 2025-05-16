@@ -1,5 +1,5 @@
 
-namespace ReactNative.Helper
+namespace Badir.Helper
 {
     public class SeedDataService : IHostedService
     {

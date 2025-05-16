@@ -1,4 +1,4 @@
-namespace ReactNative.Service.CampaignInvitationService;
+namespace Badir.Service.CampaignInvitationService;
 
 public interface ICampaignInvitationService
 {

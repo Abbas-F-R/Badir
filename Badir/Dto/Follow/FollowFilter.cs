@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.Follow;
+namespace Badir.Dto.Follow;
 
 public class FollowFilter : BaseFilter
 {

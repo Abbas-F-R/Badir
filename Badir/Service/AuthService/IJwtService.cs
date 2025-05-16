@@ -1,7 +1,7 @@
 
 using System.Security.Claims;
 
-namespace ReactNative.Service.AuthService;
+namespace Badir.Service.AuthService;
 
 public interface IJwtService
 {

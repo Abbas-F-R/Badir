@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ReactNative.Model;
+namespace Badir.Model;
 
 [Table("topics")]
 public class Topic : BaseEntity

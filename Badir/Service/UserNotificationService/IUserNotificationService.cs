@@ -1,4 +1,4 @@
-namespace ReactNative.Service.UserNotificationService;
+namespace Badir.Service.UserNotificationService;
 
 public interface IUserNotificationService
 {

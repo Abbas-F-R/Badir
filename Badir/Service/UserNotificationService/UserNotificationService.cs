@@ -1,6 +1,6 @@
-using ReactNative.Dto.UserNotification;
+using Badir.Dto.UserNotification;
 
-namespace ReactNative.Service.UserNotificationService;
+namespace Badir.Service.UserNotificationService;
 
 public class UserNotificationService(IRepositoryWrapper wrapper, IMapper mapper) : IUserNotificationService
 {

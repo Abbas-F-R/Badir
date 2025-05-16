@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace ReactNative.Dto.Post;
+namespace Badir.Dto.Post;
 
 public class PostUpdate
 {

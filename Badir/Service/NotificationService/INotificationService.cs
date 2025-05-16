@@ -1,6 +1,6 @@
-using ReactNative.Dto.Notification;
+using Badir.Dto.Notification;
 
-namespace ReactNative.Service.NotificationService;
+namespace Badir.Service.NotificationService;
 
 public interface INotificationService
 {

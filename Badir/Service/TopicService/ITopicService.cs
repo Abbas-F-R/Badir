@@ -1,4 +1,4 @@
-namespace ReactNative.Service.TopicService;
+namespace Badir.Service.TopicService;
 
 public interface ITopicService
 {

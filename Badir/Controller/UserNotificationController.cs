@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ReactNative.Controller;
+namespace Badir.Controller;
 [ApiController]
 [Route("api/[Controller]")]
 public class UserNotificationController(IUserNotificationService service) : BaseController

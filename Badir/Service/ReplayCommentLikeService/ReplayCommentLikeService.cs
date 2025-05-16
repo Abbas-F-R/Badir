@@ -1,4 +1,4 @@
-namespace ReactNative.Service;
+namespace Badir.Service;
 
 public class ReplayCommentLikeService(IRepositoryWrapper wrapper, IMapper mapper) : IReplayCommentLikeService
 {

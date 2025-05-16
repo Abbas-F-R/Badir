@@ -1,4 +1,4 @@
-namespace ReactNative.Service.FileService;
+namespace Badir.Service.FileService;
 
 public class FileService(IWebHostEnvironment webHostEnvironment) : IFileService
 {

@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.Notification;
+namespace Badir.Dto.Notification;
 
 public class NotificationDto
 {

@@ -1,4 +1,4 @@
-namespace ReactNative.Interface;
+namespace Badir.Interface;
 
 public interface INotificationRepository : IGenericRepository<Notification, int> 
 {

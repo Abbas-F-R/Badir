@@ -1,5 +1,5 @@
 
-namespace ReactNative.Dto.AppUser;
+namespace Badir.Dto.AppUser;
 
 public class UserDto
 {

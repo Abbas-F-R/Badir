@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.CampaignInvitation;
+namespace Badir.Dto.CampaignInvitation;
 
 public class CampaignInvitationDto
 {

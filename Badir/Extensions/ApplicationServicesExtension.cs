@@ -3,11 +3,11 @@ using FirebaseAdmin;
 using FirebaseAdmin.Messaging;
 using Google.Apis.Auth.OAuth2;
 using Microsoft.EntityFrameworkCore;
-using ReactNative.Service;
-using ReactNative.Service.CommentService;
+using Badir.Service;
+using Badir.Service.CommentService;
 
 
-namespace ReactNative.Extensions;
+namespace Badir.Extensions;
 
 public static class ApplicationServicesExtension
 {

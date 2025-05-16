@@ -1,5 +1,5 @@
 
-namespace ReactNative
+namespace Badir
 {
     public class Mapper : Profile
     {

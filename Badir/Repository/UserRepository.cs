@@ -1,5 +1,5 @@
 
-namespace ReactNative.Repository;
+namespace Badir.Repository;
 
 public class UserRepository : GenericRepository<User, int> , IUserRepository
 {

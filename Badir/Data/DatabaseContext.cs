@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace ReactNative.Data;
+namespace Badir.Data;
 
 public class DatabaseContext : DbContext
 {

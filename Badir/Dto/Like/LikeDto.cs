@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.Like;
+namespace Badir.Dto.Like;
 
 public class LikeDto
 {

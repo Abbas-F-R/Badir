@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.Permission;
+namespace Badir.Dto.Permission;
 
 public class PermissionResponse
 {

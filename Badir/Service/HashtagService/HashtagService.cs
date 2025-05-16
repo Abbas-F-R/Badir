@@ -1,6 +1,6 @@
-using ReactNative.Dto.Hashtag;
+using Badir.Dto.Hashtag;
 
-namespace ReactNative.Service.HashtagService;
+namespace Badir.Service.HashtagService;
 
 public class HashtagService(IRepositoryWrapper wrapper, IMapper mapper): IHashtagService
 {

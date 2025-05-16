@@ -7,32 +7,15 @@ using Microsoft.AspNetCore.Mvc;
 
 // using FileResult = MangaA.Dto.Files.FileResult;
 
-namespace ReactNative.Controller;
+namespace Badir.Controller;
 
 public class BaseController : ControllerBase
 {
     protected int Id => int.TryParse(GetClaim("Id"), out var id) ? id : -1;
     protected string UserName => GetClaim(ClaimTypes.Name) ?? "";
-    // protected string Language =>  Request.Headers["Accept-Language"].ToString();
 
     protected string Role => GetClaim("Role");
 
-    // protected Guid? ParentId
-    // {
-    //     get
-    //     {
-    //         var idString = GetClaim("ParentId");
-    //         Guid? re;
-    //         if (!string.Equals(idString, null, StringComparison.Ordinal) &&
-    //             !string.Equals(idString, "null", StringComparison.Ordinal))
-    //             re = Guid.Parse(idString);
-    //         else
-    //             re = null;
-    //         return re;
-    //     }
-    // }
-    //
-    // protected string MethodType => HttpContext.Request.Method;
 
     protected virtual string GetClaim(string claimName)
     {
@@ -58,7 +41,7 @@ public class BaseController : ControllerBase
         int pageNumber = 0, int pageSize = 10
     )
     {
-        return result.error != null
+        return result.error != null 
             ? base.BadRequest(new { Message = result.error })
             : base.Ok(new Response<T>
             {
@@ -69,28 +52,22 @@ public class BaseController : ControllerBase
                 IsLast = pageNumber >= (result.totalCount + pageSize - 1) / pageSize
             });
     }
-    
-    // protected ObjectResult Ok<T>((List<T>? data, RealtyReport? report, int? totalCount, string? error) result,
-    //     int pageNumber = 0, int pageSize = 10
-    // )
-    // {
-    //     return result.error != null
-    //         ? base.BadRequest(new { Message = result.error })
-    //         : base.Ok(new MRResponse<T>()
-    //         {
-    //             Data = result.data,
-    //             Report = result.report,
-    //             PagesCount = (result.totalCount + pageSize - 1) / pageSize,
-    //             CurrentPage = pageNumber,
-    //             TotalCount = result.totalCount ?? 0,
-    //             IsLast = pageNumber >= (result.totalCount + pageSize - 1) / pageSize
-    //         });
-    // }
+
 
     protected ObjectResult Ok<T>((T obj, string? error) result)
     {
-        return result.error != null
+        return result.error != null 
             ? base.BadRequest(new { Message = result.error })
             : base.Ok(result.obj);
     }
+
+    // protected ObjectResult MyBadRequest(string? error = null)
+    // {
+    //     var message = ModelState.Values
+    //         .SelectMany(v => v.Errors)
+    //         .Select(e => e.ErrorMessage)
+    //         .FirstOrDefault() ?? error;
+    //
+    //     return BadRequest(new { message });
+    // }
 }

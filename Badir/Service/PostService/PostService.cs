@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ReactNative.Service.PostService;
+namespace Badir.Service.PostService;
 
 public class PostService(
     IRepositoryWrapper wrapper,

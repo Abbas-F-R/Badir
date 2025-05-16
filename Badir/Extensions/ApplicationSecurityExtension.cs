@@ -6,7 +6,7 @@ using DotNetEnv;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 
-namespace ReactNative.Extensions;
+namespace Badir.Extensions;
 
 public static class ApplicationSecurityExtension
 {

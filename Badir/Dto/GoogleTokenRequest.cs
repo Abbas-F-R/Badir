@@ -1,4 +1,4 @@
-namespace ReactNative.Dto;
+namespace Badir.Dto;
 
 public class GoogleTokenRequest
 {

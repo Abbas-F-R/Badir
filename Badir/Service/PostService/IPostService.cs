@@ -1,4 +1,4 @@
-namespace ReactNative.Service.PostService;
+namespace Badir.Service.PostService;
 
 public interface IPostService
 {

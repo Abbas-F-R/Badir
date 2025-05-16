@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using ReactNative.Service.CommentLikeService;
+using Badir.Service.CommentLikeService;
 
-namespace ReactNative.Controller;
+namespace Badir.Controller;
 [ApiController]
 [Route("api/[Controller]")]
 public class ReplayCommentLikeController(ICommentLikeService service) : BaseController

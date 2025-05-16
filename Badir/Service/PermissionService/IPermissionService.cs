@@ -1,6 +1,6 @@
-using ReactNative.Dto.Permission;
+using Badir.Dto.Permission;
 
-namespace ReactNative.Service.PermissionService;
+namespace Badir.Service.PermissionService;
 
 public interface IPermissionService
 {

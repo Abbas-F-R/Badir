@@ -1,4 +1,4 @@
-namespace ReactNative.Enums;
+namespace Badir.Enums;
 
 public enum PermissionType
 {

@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ReactNative.Service.CommentService;
+namespace Badir.Service.CommentService;
 
 public class CommentService(IRepositoryWrapper wrapper, IMapper mapper) : ICommentService
 {

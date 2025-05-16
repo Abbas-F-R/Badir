@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.ReplayComment;
+namespace Badir.Dto.ReplayComment;
 
 public class ReplayCommentFilter : BaseFilter
 {

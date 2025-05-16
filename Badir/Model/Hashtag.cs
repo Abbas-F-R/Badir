@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ReactNative.Model;
+namespace Badir.Model;
 
 [Table("hashtags")]
 public class Hashtag : BaseEntity

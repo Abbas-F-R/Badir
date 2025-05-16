@@ -1,5 +1,5 @@
 
-namespace ReactNative.Service.UserService;
+namespace Badir.Service.UserService;
 
 public interface IUserService
 {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 
-namespace ReactNative.Extensions;
+namespace Badir.Extensions;
 
 public class PermissionHandler : AuthorizationHandler<IAuthorizationRequirement>
 {

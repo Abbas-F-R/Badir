@@ -1,4 +1,4 @@
-namespace ReactNative.Model;
+namespace Badir.Model;
 
 public class CampaignInvitation : BaseEntity
 {

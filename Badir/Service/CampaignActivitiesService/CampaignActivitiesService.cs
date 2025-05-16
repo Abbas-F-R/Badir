@@ -1,4 +1,4 @@
-namespace ReactNative.Service.CampaignActivitiesService;
+namespace Badir.Service.CampaignActivitiesService;
 
 public class CampaignActivitiesService(IRepositoryWrapper wrapper, IMapper mapper) : ICampaignActivitiesService
 {

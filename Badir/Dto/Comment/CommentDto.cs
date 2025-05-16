@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.Comment;
+namespace Badir.Dto.Comment;
 
 public class CommentDto
 {

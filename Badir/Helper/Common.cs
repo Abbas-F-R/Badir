@@ -1,5 +1,5 @@
 using System.Net;
-namespace ReactNative.Helper;
+namespace Badir.Helper;
 
 public static class Common
 {

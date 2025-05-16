@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.Rate;
+namespace Badir.Dto.Rate;
 
 public class RateForm
 {

@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.Topic;
+namespace Badir.Dto.Topic;
 
 public class TopicDto
 {

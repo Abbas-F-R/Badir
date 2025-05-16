@@ -1,4 +1,4 @@
-namespace ReactNative.Base;
+namespace Badir.Base;
 
 public class LikeBase : BaseEntity
 {

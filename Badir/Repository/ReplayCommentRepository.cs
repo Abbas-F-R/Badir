@@ -1,4 +1,4 @@
-namespace ReactNative.Repository;
+namespace Badir.Repository;
 
 public class ReplayCommentRepository : GenericRepository<ReplayComment, int>, IReplayCommentRepository
 {

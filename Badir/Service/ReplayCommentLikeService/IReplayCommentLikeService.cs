@@ -1,4 +1,4 @@
-namespace ReactNative.Service;
+namespace Badir.Service;
 
 public interface IReplayCommentLikeService
 {

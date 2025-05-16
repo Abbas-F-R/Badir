@@ -1,5 +1,5 @@
 
-namespace ReactNative.Service.CommentLikeService;
+namespace Badir.Service.CommentLikeService;
 
 public class CommentLikeService(IRepositoryWrapper wrapper, IMapper mapper) : ICommentLikeService
 {

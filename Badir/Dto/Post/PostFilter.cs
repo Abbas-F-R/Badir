@@ -1,4 +1,4 @@
-namespace ReactNative.Dto.Post;
+namespace Badir.Dto.Post;
 
 public class PostFilter : BaseFilter
 {

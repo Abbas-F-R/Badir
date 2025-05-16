@@ -1,4 +1,4 @@
-namespace ReactNative.Service.LikeService;
+namespace Badir.Service.LikeService;
 
 public interface ILikeService
 { 

@@ -3,7 +3,7 @@ using Google.Apis.Auth;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ReactNative.Controller;
+namespace Badir.Controller;
 
 [Route("api/[Controller]")]
 [ApiController]
