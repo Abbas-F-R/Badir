@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactNative", "ReactNative\ReactNative.csproj", "{6CD21005-596A-420C-AF34-5FAF1E8F587D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badir", "Badir\Badir.csproj", "{6CD21005-596A-420C-AF34-5FAF1E8F587D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
