@@ -15,7 +15,7 @@ public class AuthController(IJwtService jwtService)  : BaseController
     
     [HttpPost("Login")]
     public async Task<ActionResult<Auth>> Login(LoginRequest request) => Ok(await jwtService.Login(request));
-    [HttpPut("Update/Permission")]
+    [HttpPut("Permission")]
     public async Task<ActionResult<UserDto>> UpdatePermission([FromBody] UserPermissionsUpdate update) => 
         Ok(await jwtService.AddPermission(update));
     [HttpPost("google-login")]
