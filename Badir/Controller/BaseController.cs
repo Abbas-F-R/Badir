@@ -61,13 +61,21 @@ public class BaseController : ControllerBase
             : base.Ok(result.obj);
     }
 
-    // protected ObjectResult MyBadRequest(string? error = null)
-    // {
-    //     var message = ModelState.Values
-    //         .SelectMany(v => v.Errors)
-    //         .Select(e => e.ErrorMessage)
-    //         .FirstOrDefault() ?? error;
-    //
-    //     return BadRequest(new { message });
-    // }
+    protected ObjectResult Ok<T,D>((List<T>? data, D? Details, int? totalCount, string? error) result,
+        int pageNumber = 0, int pageSize = 10
+    )
+    {
+        return result.error != null
+            ? base.BadRequest(new { Message = result.error })
+            : base.Ok(new ResponseWithDetails<T, D>()
+            {
+                Data = result.data,
+                Details = result.Details,
+                PagesCount = (result.totalCount + pageSize - 1) / pageSize,
+                CurrentPage = pageNumber,
+                TotalCount = result.totalCount ?? 0,
+                IsLast = pageNumber >= (result.totalCount + pageSize - 1) / pageSize
+            });
+    }
+
 }
